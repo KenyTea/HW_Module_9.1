@@ -14,7 +14,6 @@ namespace HWModule9._1.Modules
 
     public class SportsEquipment : Product
     {
-        public SportsEq Name { get; set; }
 
         public override void Check()
         {

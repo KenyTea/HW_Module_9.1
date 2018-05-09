@@ -17,7 +17,7 @@ namespace HWModule9._1.Modules
     {
         private Random rand = new Random();
         public Authors Author { get; set; }
-        public Boooks Name {get; set;} 
+
 
         public Book()
         {

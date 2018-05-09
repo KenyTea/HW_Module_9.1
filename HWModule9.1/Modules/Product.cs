@@ -11,11 +11,12 @@ namespace HWModule9._1.Modules
 
     public abstract class Product
     {
+        
+        public string Name { get; set; }
         public double Price { get; set; }
         public int Manufacturer { get; set; }
         public int Age { get; set; }
-
-        Random rand = new Random();
+        
 
         public abstract void PrintInfo();
         public abstract void Check();

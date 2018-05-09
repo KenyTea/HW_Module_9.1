@@ -16,11 +16,14 @@ namespace HWModule9._1.Modules
     public class Toy : Product
     {
         public Materials Material { get; set; }
-        public ForToys Name { get; set; }
+        
 
         public override void Check()
         {
+            foreach (Product item in pro)
+            {
 
+            }
         }
 
         public override void PrintInfo()
