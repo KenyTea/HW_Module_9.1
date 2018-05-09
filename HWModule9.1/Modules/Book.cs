@@ -24,18 +24,18 @@ namespace HWModule9._1.Modules
             Author = (Authors)rand.Next(0, 3);
         }
 
-        public override void Check()
+        public override void Check(Type type)
         {
-
+            Console.WriteLine(type.GetType());
         }
 
         public override void PrintInfo()
         {
-            Console.WriteLine("Name " + Name);
-            Console.WriteLine("Author " + Author);
-            Console.WriteLine("Price " + Price);
-            Console.WriteLine("Manufacturer " + Manufacturer);
-            Console.WriteLine("Age " + Age);
+            Console.WriteLine("Name -" + Name);
+            Console.WriteLine("Author -" + Author);
+            Console.WriteLine("Price -" + Price);
+            Console.WriteLine("Manufacturer -" + Manufacturer);
+            Console.WriteLine("Age -" + Age);
         }
     }
 }

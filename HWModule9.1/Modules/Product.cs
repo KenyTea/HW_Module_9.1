@@ -19,7 +19,7 @@ namespace HWModule9._1.Modules
         
 
         public abstract void PrintInfo();
-        public abstract void Check();
+        public abstract void Check(Type type);
 
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HWModule9._1.Modules;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,7 +22,18 @@ namespace HWModule9._1
     {
         static void Main(string[] args)
         {
+            Creator creator = new Creator();
 
+            creator.GenerateToys();
+            creator.GenerateBooks();
+            creator.GenerateSportEquipments();
+
+            creator.PrintAll();
+
+            Toy toy = new Toy();
+
+
+            
 
         }
     }

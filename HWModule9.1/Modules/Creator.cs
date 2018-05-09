@@ -59,8 +59,9 @@ namespace HWModule9._1.Modules
             foreach (Product item in product)
             {
                 item.PrintInfo();
+                Console.WriteLine("-------------------------------------------------------------");
             }
-            Console.WriteLine("---------------------------------------------------------------");
+            Console.WriteLine("=================================================================");
         }
 
 

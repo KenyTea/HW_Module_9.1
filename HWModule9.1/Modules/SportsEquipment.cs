@@ -15,17 +15,17 @@ namespace HWModule9._1.Modules
     public class SportsEquipment : Product
     {
 
-        public override void Check()
+        public override void Check(Type type)
         {
-            
+            Console.WriteLine(type.GetType());
         }
 
         public override void PrintInfo()
         {
-            Console.WriteLine("Name " + Name);
-            Console.WriteLine("Price " + Price);
-            Console.WriteLine("Manufacturer " + Manufacturer);
-            Console.WriteLine("Age " + Age);
+            Console.WriteLine("Name -" + Name);
+            Console.WriteLine("Price -" + Price);
+            Console.WriteLine("Manufacturer -" + Manufacturer);
+            Console.WriteLine("Age -" + Age);
         }
     }
 }

@@ -18,21 +18,18 @@ namespace HWModule9._1.Modules
         public Materials Material { get; set; }
         
 
-        public override void Check()
+        public override void Check(Type type)
         {
-            foreach (Product item in pro)
-            {
-
-            }
+            Console.WriteLine(type.GetType());
         }
 
         public override void PrintInfo()
         {
-            Console.WriteLine("Name " + Name);
-            Console.WriteLine("Price " + Price);
-            Console.WriteLine("Manufacturer " + Manufacturer);
-            Console.WriteLine("Material " + Material);
-            Console.WriteLine("Age " + Age);
+            Console.WriteLine("Name -" + Name);
+            Console.WriteLine("Price -" + Price);
+            Console.WriteLine("Manufacturer -" + Manufacturer);
+            Console.WriteLine("Material -" + Material);
+            Console.WriteLine("Age -" + Age);
         }
     }
 }
