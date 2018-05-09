@@ -11,16 +11,12 @@ namespace HWModule9._1.Modules
       со своими методами вывода информации на экран, и определения соответствия искомому типу.*/
 
     public enum Materials { Plastic, Metal, Wood, Aluminum }
+    public enum ForToys { Car, Doll, KubicRubic, Yula }
 
     public class Toy : Product
     {
-        private Random rand = new Random();
         public Materials Material { get; set; }
-
-        public Toy()
-        {
-            Material = (Materials)rand.Next(0, 3);
-        }
+        public ForToys Name { get; set; }
 
         public override void Check()
         {

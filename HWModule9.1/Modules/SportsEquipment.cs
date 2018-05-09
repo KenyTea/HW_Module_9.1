@@ -10,10 +10,11 @@ namespace HWModule9._1.Modules
      Спорт-инвентарь (название, цена, производитель, возраст, на который рассчитана)
      со своими методами вывода информации на экран, и определения соответствия искомому типу.
          */
+         public enum SportsEq { Cycle, Scooter, Rollers, skateboard }
 
     public class SportsEquipment : Product
     {
-        
+        public SportsEq Name { get; set; }
 
         public override void Check()
         {

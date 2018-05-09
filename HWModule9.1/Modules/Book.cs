@@ -11,11 +11,13 @@ namespace HWModule9._1.Modules
       со своими методами вывода информации на экран, и определения соответствия искомому типу.*/
 
     public enum Authors { Pushkin, Chehov, Dostaevskiy, Bulgakov}
+    public enum Boooks { Skazka, Fentazy, Rasskath, Poema }
 
     public class Book : Product
     {
         private Random rand = new Random();
         public Authors Author { get; set; }
+        public Boooks Name {get; set;} 
 
         public Book()
         {
