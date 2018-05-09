@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Modules\Book.cs" />
+    <Compile Include="Modules\Creator.cs" />
     <Compile Include="Modules\Product.cs" />
     <Compile Include="Modules\SportsEquipment.cs" />
     <Compile Include="Modules\Toy.cs" />

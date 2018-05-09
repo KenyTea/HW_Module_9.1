@@ -22,7 +22,10 @@ namespace HWModule9._1.Modules
 
         public override void PrintInfo()
         {
-            
+            Console.WriteLine("Name " + Name);
+            Console.WriteLine("Price " + Price);
+            Console.WriteLine("Manufacturer " + Manufacturer);
+            Console.WriteLine("Age " + Age);
         }
     }
 }

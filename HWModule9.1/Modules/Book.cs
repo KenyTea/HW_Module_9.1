@@ -10,10 +10,18 @@ namespace HWModule9._1.Modules
       Книга (название, автор, цена, издательство, возраст, на который рассчитана)
       со своими методами вывода информации на экран, и определения соответствия искомому типу.*/
 
+    public enum Authors { Pushkin, Chehov, Dostaevskiy, Bulgakov}
+
     public class Book : Product
     {
-         public string Author { get; set; }
-       
+        private Random rand = new Random();
+        public Authors Author { get; set; }
+
+        public Book()
+        {
+            Author = (Authors)rand.Next(0, 3);
+        }
+
         public override void Check()
         {
 
@@ -21,7 +29,11 @@ namespace HWModule9._1.Modules
 
         public override void PrintInfo()
         {
-
+            Console.WriteLine("Name " + Name);
+            Console.WriteLine("Author " + Author);
+            Console.WriteLine("Price " + Price);
+            Console.WriteLine("Manufacturer " + Manufacturer);
+            Console.WriteLine("Age " + Age);
         }
     }
 }

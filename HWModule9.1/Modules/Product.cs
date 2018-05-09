@@ -16,6 +16,8 @@ namespace HWModule9._1.Modules
         public string Manufacturer { get; set; }
         public int Age { get; set; }
 
+        Random rand = new Random();
+
         public abstract void PrintInfo();
         public abstract void Check();
 
