@@ -10,6 +10,8 @@ namespace HWModule9._1
     {
         static void Main(string[] args)
         {
+
+
         }
     }
 }
